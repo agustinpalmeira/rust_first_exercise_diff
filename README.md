@@ -11,13 +11,6 @@ The exercise can be found here: https://taller-1-fiuba-rust.github.io/guia_2.htm
 
 Written in RUST language, pragmatically.
 
-
-## Ensure XCode console tools
-
-* From the Terminal:
-
-      xcode-select --install
-
 ## Clone and access the project
 * From the Terminal:
 
@@ -38,7 +31,7 @@ The project can be opened with IntelliJ IDEA.
 cargo run <first_file_path> <second_file_path>
 ```
 
-## Running the tests
+### How to run the tests
 
 * From the Terminal:
 ```
