@@ -44,19 +44,19 @@ impl Grid {
 }
 
 #[test]
-fn test_grid_creation_height_successful(){
+fn test_grid_creation_height_successful() {
     let grid = Grid::new(3, 3);
     assert_eq!(grid.get_height(), 3);
 }
 
 #[test]
-fn test_grid_creation_width_successful(){
+fn test_grid_creation_width_successful() {
     let grid = Grid::new(3, 3);
     assert_eq!(grid.get_width(), 3);
 }
 
 #[test]
-fn test_grid_set_value_successful(){
+fn test_grid_set_value_successful() {
     let grid = Grid::new(3, 3);
     grid.set(1, 1, 1);
     assert_eq!(grid.get(1, 1), 1);

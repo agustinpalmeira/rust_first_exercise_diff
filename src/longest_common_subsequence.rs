@@ -68,7 +68,7 @@ pub fn print_lcs_grid(grid: Grid, a: &[String], b: &[String], i: usize, j: usize
 }
 
 #[test]
-fn test_lcs_creation_size_successful(){
+fn test_lcs_creation_size_successful() {
     let vec_file_one: &Vec<String> = &vec!["a".to_string(), "b".to_string()];
     let vec_file_two: &Vec<String> = &vec!["a".to_string()];
     let grid = create_lcs_grid(vec_file_one, vec_file_two);

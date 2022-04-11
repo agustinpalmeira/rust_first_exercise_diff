@@ -25,7 +25,11 @@ fn main() {
     let vec_file_two: &Vec<String> = &file_reader::read_file_lines(second_file_path);
     let grid = create_lcs_grid(vec_file_one, vec_file_two);
 
-    println!("A grid of {} lines and {} columns was created", grid.get_width(), grid.get_height());
+    println!(
+        "A grid of {} lines and {} columns was created",
+        grid.get_width(),
+        grid.get_height()
+    );
 
     print_lcs_grid(
         grid,
