@@ -22,7 +22,7 @@ impl Grid {
         }
     }
 
-    /// Returns the width of the grid.
+    /// Returns the value of the cell at the given coordinates.
     pub fn get(&self, x: usize, y: usize) -> i32 {
         self.cells[y * self.width + x].get()
     }
@@ -33,12 +33,31 @@ impl Grid {
     }
 
     /// Returns the width of the grid.
-    pub fn width(&self) -> usize {
+    pub fn get_width(&self) -> usize {
         self.width
     }
 
     /// Returns the height of the grid.
-    pub fn height(&self) -> usize {
+    pub fn get_height(&self) -> usize {
         self.height
     }
+}
+
+#[test]
+fn test_grid_creation_height_successful(){
+    let grid = Grid::new(3, 3);
+    assert_eq!(grid.get_height(), 3);
+}
+
+#[test]
+fn test_grid_creation_width_successful(){
+    let grid = Grid::new(3, 3);
+    assert_eq!(grid.get_width(), 3);
+}
+
+#[test]
+fn test_grid_set_value_successful(){
+    let grid = Grid::new(3, 3);
+    grid.set(1, 1, 1);
+    assert_eq!(grid.get(1, 1), 1);
 }
